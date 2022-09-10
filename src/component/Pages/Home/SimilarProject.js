@@ -2,12 +2,12 @@ import React from 'react'
 import { MdOutlineLocationOn } from "react-icons/md";
 const SimilarProject = ({ samilerproject, title, location, prics, bgColor }) => {
     return (
-        <div className={`w-[300px] border-2 rounded-lg  p-3 shadow-md bg-[#${bgColor}] ${bgColor == "ffffff" ? 'text-balck' : 'text-white mx-auto'}`}>
+        <div className={`w-[300px] border-2 rounded-lg  p-3 shadow-md bg-[#fff] text-balck }`}>
             <img src={samilerproject} />
             <h1 className='text-xl my-2 font-medium '>{title}</h1>
             <div className={`flex justify-between items-center  `}>
                 <div className='flex gap-3 items-center'>
-                    < MdOutlineLocationOn className={`w-5 ${bgColor == "ffffff" ? 'text-balck' : 'text-white'}`} />
+                    < MdOutlineLocationOn className={`w-5`} />
                     <p className='font-medium '>{location}</p>
                 </div>
                 <h1>{prics}</h1>
